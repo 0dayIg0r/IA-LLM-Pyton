@@ -4,3 +4,6 @@ load_dotenv()
 
 
 from providers import anthropic, google, groq, openai, xai
+
+
+print(anthropic.test())
