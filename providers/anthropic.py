@@ -16,4 +16,4 @@ def test():
             {"role": "user", "content": "Qual é a capital da França?"}
         ]
     )
-    return response.output_text
+    return response.content[0].text
