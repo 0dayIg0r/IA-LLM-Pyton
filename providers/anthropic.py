@@ -13,7 +13,9 @@ def test():
         max_tokens=1024,
         system="Seja direto e conciso. Responda apenas o necessário.",
         messages=[
-            {"role": "user", "content": "Qual é a capital da França?"}
+            {"role": "user", "content": "Qual é a capital da França?"},
+            {"role": "assistant", "content": "A capital da França é Paris."},
+        {"role": "user", "content": "Pensei que fosse Brasil"}
         ]
     )
     return response.content[0].text
